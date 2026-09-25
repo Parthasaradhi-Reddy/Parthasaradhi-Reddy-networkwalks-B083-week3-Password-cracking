@@ -98,11 +98,11 @@ The onlinehash cracker was opened in a web browser.
 
 Tool: https://www.onlinehashcrack.com/tools-pdf-hash-extractor.php
 
-
-
 The password-protected PDF was selected and processed using the PDF option.
 
 The Hash Calculator generated the hash.
+
+![](hash-extract.png)
 
 The generated hash was copied and save a text (.txt) file.
 
@@ -112,7 +112,11 @@ The .txt file is uploaded to Johnny.
 
 John the Ripper cracked the password, the recovered password was used to open the password-protected PDF.
 
+![](pwd-crack.png)  ![](pwd-pdf.png)
+
 After unlocking the PDF, the lab flag was captured.
+
+![](flag-capture1.png)
 
 ---
 
@@ -141,6 +145,8 @@ The password-protected PDF was selected and processed using the PDF option.
 
 The Hash Calculator generated the hash.
 
+![](Nw-hash-crack.png)
+
 The generated hash was copied for use in the next step.
 
 ### Step 2 – Open Networkwalks Password Cracker
@@ -157,6 +163,41 @@ The password-cracking process was started using the available wordlist.
 
 The tool cracked the password, the recovered password was used to open the password-protected PDF.
 
+![](Nw-pwd-crack.png)
+
 After unlocking the PDF, the lab flag was captured.
 
+![](flag-capture.png)
+
 ---
+
+# Risk Anlysis/Impact
+
+| Risk                    | Potential Impact                                             | Risk Level | Recommendation                                                  |
+| ----------------------- | ------------------------------------------------------------ | ---------- | --------------------------------------------------------------- |
+| Weak PDF password       | Password may be recovered through dictionary attacks.        | Medium     | Use long, unique, and complex passwords.                        |
+| Common passwords        | Common words and passwords may be quickly identified.        | High       | Avoid dictionary words and commonly used passwords.             |
+| Short passwords         | Smaller password combinations reduce cracking difficulty.    | High       | Use sufficiently long passwords with varied character types.    |
+| Password hash exposure  | Obtaining a crackable hash enables offline password attacks. | High       | Protect password hashes and restrict access to sensitive files. |
+| Password reuse          | A compromised password may expose other accounts or files.   | High       | Use unique passwords for different systems and files.           |
+
+---
+
+# Conclusion
+
+The exercise demonstrated that password-protected files can be subjected
+to offline password-guessing attacks when an attacker obtains a suitable
+password hash.
+
+Through this activity, I learned how to crack the password of the locked pdf file using various tools.
+
+Password-protected file security | Password hashes | PDF hash extraction | John the Ripper | Johnny 
+| Dictionary attacks | Password recovery | Importance of strong passwords
+
+---
+
+# Author
+
+Nusi Parthasaradhi Reddy
+
+Cybersecurity Trainee | LinkedIn: https://www.linkedin.com/in/nusi-parthasaradhi-reddy-13a6a8247/
