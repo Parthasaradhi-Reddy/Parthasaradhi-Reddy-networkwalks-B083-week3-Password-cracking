@@ -185,7 +185,7 @@ After unlocking the PDF, the lab flag was captured.
 
 # Conclusion
 
-The exercise demonstrated that password-protected files can be subjected
+This exercise demonstrated that password-protected files can be subjected
 to offline password-guessing attacks when an attacker obtains a suitable
 password hash.
 
