@@ -94,15 +94,23 @@ Password-Protected PDF --> Extract PDF Hash --> Save Hash to .txt --> Johnny -->
 
 Hashing: Hashing is the process of turning any input data—like a text string, password, or file—into a short, fixed-length string of characters using a mathematical formula called a hash function. It acts as a unique digital fingerprint; changing even a single character in the input data creates a completely different output.
 
-Extracted the had of the pdf file by uploading it to the online hash cracker.
+The onlinehash cracker was opened in a web browser.
 
-The extracted hash was saved into a text file
+Tool: https://www.onlinehashcrack.com/tools-pdf-hash-extractor.php
+
+
+
+The password-protected PDF was selected and processed using the PDF option.
+
+The Hash Calculator generated the hash.
+
+The generated hash was copied and save a text (.txt) file.
 
 ### Load the Hash into Johnny
 
 The .txt file is uploaded to Johnny.
 
-John the Ripper cracked the password, the recovered password was used to open the password-protected PDF and captured the flag.
+John the Ripper cracked the password, the recovered password was used to open the password-protected PDF.
 
 After unlocking the PDF, the lab flag was captured.
 
